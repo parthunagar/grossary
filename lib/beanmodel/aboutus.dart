@@ -1,6 +1,5 @@
 class AboutUsMain{
-  dynamic status;
-  dynamic message;
+  dynamic status,message;
   AboutUsData data;
 
   AboutUsMain(this.status, this.message, this.data);

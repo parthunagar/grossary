@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Color kMainColor = Color(0xFF39c526);
+Color kMainColor = Color(0xFFF33C3E);
+Color kMainColor1 = Color(0xFFF33C3E);
+
 Color kDisabledColor = Color(0xff616161);
 Color kTextColor = Color(0xfffff9e9);
 Color kWhiteColor = Colors.white;
@@ -18,16 +19,8 @@ Color kButtonBorderColor = Color(0xffe1e1e1);
 Color kButtonTextColor = Color(0xffbababa);
 Color kContainerShadowColor = Color(0xff87fddc82);
 Color kRedColor = Color(0xffdc143c);
+Color kLightTextColoEt = Color(0xffAAAAAA);
 
-Color kRedLightColor = Color(0xffFD696F);
-// Color kRedLightColorOpacity = Color(0xffFD696F).withOpacity(0.3);
-Color kGrey = Color(0xffAAAAAA);
-Color kGreyBlack = Color(0xff505050);
-Color kDarkColor = Color(0xffF33C3E);
-// Red: #FD696F
-// Black: #505050
-// Gray: #AAAAAA
-// All Button Gradient Color: Light: #FD696F    Dark: #F33C3E
 
 Color kRoundButtonInButton  = Color(0xffFD696F);
 Color kRoundButtonInButton2  = Color(0xffFDDDDC);

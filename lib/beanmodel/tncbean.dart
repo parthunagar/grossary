@@ -16,7 +16,7 @@ class TermsConditionMain{
 }
 
 class TermsConditionMainData{
-  dynamic about_id,title, description;
+  dynamic about_id,title,description;
 
   TermsConditionMainData(this.about_id, this.title, this.description);
 

@@ -1,10 +1,8 @@
-import 'package:driver/Pages/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:driver/Routes/routes.dart';
-
-import 'Login/sign_in.dart';
-import 'Login/sign_up.dart';
-import 'Login/verification.dart';
+import 'package:vendor/Pages/Login/sign_in.dart';
+import 'package:vendor/Pages/Login/sign_up.dart';
+import 'package:vendor/Pages/Login/verification.dart';
+import 'package:vendor/Routes/routes.dart';
 
 GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
@@ -12,13 +10,9 @@ class SignInRoutes {
   static const String signInRoot = 'signIn/';
   static const String signUp = 'signUp';
   static const String verification = 'verification';
-  // static const String homepage = 'homepage';
 }
 
 class SignInNavigator extends StatelessWidget {
-  // final bool result;
-  // SignInNavigator(this.result);
-
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -37,19 +31,19 @@ class SignInNavigator extends StatelessWidget {
           switch (settings.name) {
             case SignInRoutes.signInRoot:
               builder = (BuildContext _) => SignIn((){
-                Navigator.popAndPushNamed(context, PageRoutes.homePage);
+                Navigator.popAndPushNamed(context, PageRoutes.newOrdersDrawer);
               });
             break;
             case SignInRoutes.signUp:
-              builder = (BuildContext _) => SignUp();
+              builder = (BuildContext _) => SignUp((){
+                Navigator.of(context).pop();
+              });
             break;
             case SignInRoutes.verification:
-              builder = (BuildContext _) => VerificationPage(() =>
-                  Navigator.popAndPushNamed(context, PageRoutes.homePage));
+              builder = (BuildContext _) => VerificationPage(() {
+                Navigator.popAndPushNamed(context, PageRoutes.newOrdersDrawer);
+              });
             break;
-            // case SignInRoutes.homepage:
-            //   builder = (BuildContext _) => HomePage();
-            //   break;
           }
           return MaterialPageRoute(builder: builder, settings: settings);
         },

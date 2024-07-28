@@ -1,48 +1,38 @@
-import 'package:driver/Theme/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:vendor/Theme/colors.dart';
 
-Color disabledColor = Color(0xff747474);
-Color scaffoldBackgroundColor = Colors.white;
-Color primaryColor = Color(0xFF39c526);
-// Color primaryColor = Color(0xffFD696F);
+//Color Color(0xffFF9900) = Color(0xffFF9900);
 
 //app theme
 final ThemeData appTheme = ThemeData(
-  scaffoldBackgroundColor: scaffoldBackgroundColor,
-  fontFamily: 'ProductSans',
+  scaffoldBackgroundColor: Colors.white,
+  fontFamily:'ProductSans',
   backgroundColor: Colors.black,
-  primaryColor: primaryColor,
+  primaryColor:  kMainColor,
   bottomAppBarColor: Colors.white,
-  dividerColor: Color(0xffF8F9FD),
-  disabledColor: disabledColor,
-  buttonColor: primaryColor,
-  focusColor: Color(0xff7b49c3),
-  cursorColor: kRedColor,
-  indicatorColor: primaryColor,
-  accentColor: primaryColor,
+  dividerColor: Color(0xffacacac),
+  disabledColor: Color(0xff616161),
+  buttonColor: kMainColor1,
+  cursorColor: kMainColor1,
+  indicatorColor: kMainColor1,
+  accentColor: kMainColor1,
   cardColor: Color(0xff222e3e),
   hintColor: Color(0xffa3a3a3),
-  bottomAppBarTheme: BottomAppBarTheme(color: primaryColor),
-  appBarTheme: AppBarTheme(
-    color: Colors.transparent,
-    elevation: 0.0,
-  ),
+  bottomAppBarTheme: BottomAppBarTheme(color: kMainColor1),
+  appBarTheme: AppBarTheme(color: Colors.transparent, elevation: 0.0, iconTheme: IconThemeData(color: Colors.black)),
   //text theme which contains all text styles
   textTheme: TextTheme(
     //default text style of Text Widget
-    bodyText1: TextStyle(),
+    bodyText1: TextStyle(color: Colors.white, fontSize: 18),
     bodyText2: TextStyle(),
-    subtitle1: TextStyle(),
-    subtitle2: TextStyle(color: disabledColor),
-    headline3: TextStyle(),
-    headline4:
-        TextStyle(color: scaffoldBackgroundColor, fontWeight: FontWeight.bold),
-    headline5:
-        TextStyle(color: scaffoldBackgroundColor, fontWeight: FontWeight.bold),
-    headline6: TextStyle(color: disabledColor),
+    subtitle1: TextStyle(fontWeight: FontWeight.w500, fontSize: 17),
+    subtitle2: TextStyle(color: Colors.grey[500],fontWeight: FontWeight.normal),
+    headline3: TextStyle(fontSize: 20),
+    headline5: TextStyle(fontWeight: FontWeight.bold),
+    headline6: TextStyle(color: Color(0xff747474)),
     caption: TextStyle(),
     overline: TextStyle(),
-    button: TextStyle(),
+    button: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.w500),
   ),
 );
 
