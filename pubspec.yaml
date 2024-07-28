@@ -1,0 +1,109 @@
+name: driver
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.0
+  percent_indicator: ^2.1.5
+  flutter_phoenix: ^0.1.0
+  flutter_bloc: ^6.0.1
+  grouped_buttons: ^1.0.4
+  firebase_core: ^0.5.0
+  firebase_auth: ^0.18.4+1
+  flutter_local_notifications: ^2.0.0
+  firebase_messaging: ^7.0.2
+  shared_preferences: ^0.5.10
+  toast: ^0.1.5
+  http: ^0.12.2
+  image_picker: ^0.6.7+11
+  shimmer_animation: ^0.1.1
+  flutter_html: ^1.1.1
+  slide_popup_dialog: ^0.0.2
+  whatsapp_unilink: ^1.0.0+1
+  url_launcher: ^5.7.10
+  share: ^0.6.5+4
+  infinite_scroll_pagination: ^2.3.0
+  signature: ^3.2.0
+  google_maps_flutter: ^1.0.3
+  geolocator: ^6.0.0+4
+  geocoder: ^0.2.1
+  flutter_polyline_points: ^0.2.4
+  geocoding: ^1.0.5
+  syncfusion_flutter_maps: ^18.4.49-beta
+  flutter_map: ^0.11.0
+  latlng: ^0.0.2
+  flutter_osm_plugin: ^0.6.7+3
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.8.0
+  flutter_test:
+    sdk: flutter
+  change_app_package_name: ^0.1.2
+
+flutter_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon.png"
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: ProductSans
+      fonts:
+        - asset: fonts/ProductSans-Regular.ttf
+        - asset: fonts/ProductSans-Bold.ttf
+    - family: Philosopher-Bold
+      fonts:
+        - asset: fonts/Philosopher-Bold.ttf
+    - family: Philosopher-BoldItalic
+      fonts:
+        - asset: fonts/Philosopher-BoldItalic.ttf
+    - family: Philosopher-Italic
+      fonts:
+        - asset: fonts/Philosopher-Italic.ttf
+    - family: Philosopher-Regular
+      fonts:
+        - asset: fonts/Philosopher-Regular.ttf
+    - family: BalooBold
+      fonts:
+        - asset: fonts/BalooBold.ttf
+    - family: BalooExtraBold
+      fonts:
+        - asset: fonts/BalooExtraBold.ttf
+    - family: BalooMedium
+      fonts:
+        - asset: fonts/BalooMedium.ttf
+    - family: BalooRegular
+      fonts:
+        - asset: fonts/BalooRegular.ttf
+    - family: BalooSemiBold
+      fonts:
+        - asset: fonts/BalooSemiBold.ttf
+
+
+  assets:
+    - assets/
+    - assets/images/
