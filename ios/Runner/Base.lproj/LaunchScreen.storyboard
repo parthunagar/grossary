@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ydg-fD-yQy"/>
+                        <viewControllerLayoutGuide type="bottom" id="xbc-2k-c8Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-bb-sFf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="spalsh_icon" translatesAutoresizingMaskIntoConstraints="NO" id="8B4-gb-Enh">
+                                <rect key="frame" x="87" y="325.5" width="240" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="245" id="F2B-ZE-EoE"/>
+                                    <constraint firstAttribute="width" constant="240" id="Hd9-s2-6dZ"/>
+                                    <constraint firstAttribute="width" secondItem="8B4-gb-Enh" secondAttribute="height" multiplier="48:49" id="yHC-Hq-bR5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8B4-gb-Enh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Kah-Ie-AAr"/>
+                            <constraint firstAttribute="bottom" secondItem="ZhO-bb-sFf" secondAttribute="bottom" id="Vwb-JL-w1R"/>
+                            <constraint firstItem="ZhO-bb-sFf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="h5c-kM-Qz5"/>
+                            <constraint firstAttribute="trailing" secondItem="ZhO-bb-sFf" secondAttribute="trailing" id="mSO-73-DOW"/>
+                            <constraint firstItem="ZhO-bb-sFf" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="nIP-3d-ney"/>
+                            <constraint firstItem="8B4-gb-Enh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qB0-wD-6O6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="251.11607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="spalsh_icon" width="908" height="834"/>
+        <image name="splash_screen" width="375" height="812"/>
+    </resources>
+</document>
