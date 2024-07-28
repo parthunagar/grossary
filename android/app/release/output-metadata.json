@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.gomarketdemo.driver",
+  "applicationId": "com.gomarketdemo.vendor",
   "variantName": "processReleaseResources",
   "elements": [
     {

@@ -1,4 +1,4 @@
-# driver
+# vendor
 
 A new Flutter application.
 

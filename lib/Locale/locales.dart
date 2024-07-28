@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart' show SynchronousFuture;
+import 'package:vendor/Locale/arabic.dart';
+import 'package:vendor/Locale/french.dart';
+import 'package:vendor/Locale/indonesian.dart';
+import 'package:vendor/Locale/portuguese.dart';
+import 'package:vendor/Locale/spanish.dart';
 import 'dart:async';
-import 'arabic.dart';
 import 'english.dart';
-import 'french.dart';
-import 'indonesian.dart';
-import 'portuguese.dart';
-import 'spanish.dart';
 
 class AppLocalizations {
   final Locale locale;
@@ -26,21 +26,12 @@ class AppLocalizations {
     'es': spanish(),
   };
 
-
-  String get or {
-    return _localizedValues[locale.languageCode]['or'];
-  }
-
-  String get pleaseallfield {
-    return _localizedValues[locale.languageCode]['pleaseallfield'];
-  }
-
-  String get upilable {
-    return _localizedValues[locale.languageCode]['upilable'];
-  }
-
   String get continueText {
     return _localizedValues[locale.languageCode]['continueText'];
+  }
+
+  String get orderinfo {
+    return _localizedValues[locale.languageCode]['orderinfo'];
   }
 
   String get welcomeTo {
@@ -100,20 +91,24 @@ class AppLocalizations {
     return _localizedValues[locale.languageCode]['register'];
   }
 
-  String get blackCottonTop {
-    return _localizedValues[locale.languageCode]['blackCottonTop'];
+  String get freshredonion {
+    return _localizedValues[locale.languageCode]['freshredonion'];
   }
 
-  String get summerFullSleeveTshirt {
-    return _localizedValues[locale.languageCode]['summerFullSleeveTshirt'];
+  String get freshredtomatoes {
+    return _localizedValues[locale.languageCode]['freshredtomatoes'];
   }
 
-  String get floralPrintShirt {
-    return _localizedValues[locale.languageCode]['floralPrintShirt'];
+  String get mediumPotatoes {
+    return _localizedValues[locale.languageCode]['mediumPotatoes'];
   }
 
-  String get hairDryer {
-    return _localizedValues[locale.languageCode]['hairDryer'];
+  String get freshLadiesFinger {
+    return _localizedValues[locale.languageCode]['freshLadiesFinger'];
+  }
+
+  String get freshgarlic {
+    return _localizedValues[locale.languageCode]['freshgarlic'];
   }
 
   String get orderedOn {
@@ -126,6 +121,10 @@ class AppLocalizations {
 
   String get payment {
     return _localizedValues[locale.languageCode]['payment'];
+  }
+
+  String get paymentmode {
+    return _localizedValues[locale.languageCode]['paymentmode'];
   }
 
   String get productID {
@@ -144,60 +143,40 @@ class AppLocalizations {
     return _localizedValues[locale.languageCode]['newOrders'];
   }
 
-  String get newDeliveryTask {
-    return _localizedValues[locale.languageCode]['newDeliveryTask'];
+  String get hey {
+    return _localizedValues[locale.languageCode]['hey'];
   }
 
-  String get orderInfo {
-    return _localizedValues[locale.languageCode]['orderInfo'];
+  String get myOrders {
+    return _localizedValues[locale.languageCode]['myOrders'];
   }
 
-  String get itemInfo {
-    return _localizedValues[locale.languageCode]['itemInfo'];
+  String get insight {
+    return _localizedValues[locale.languageCode]['insight'];
   }
 
-  String get distance {
-    return _localizedValues[locale.languageCode]['distance'];
+  String get myItems {
+    return _localizedValues[locale.languageCode]['myItems'];
   }
 
-  String get markAsPicked {
-    return _localizedValues[locale.languageCode]['markAsPicked'];
+  String get myEarnings {
+    return _localizedValues[locale.languageCode]['myEarnings'];
   }
 
-  String get direction {
-    return _localizedValues[locale.languageCode]['direction'];
+  String get myProfile {
+    return _localizedValues[locale.languageCode]['myProfile'];
   }
 
-  String get sendToBank {
-    return _localizedValues[locale.languageCode]['sendToBank'];
+  String get helpCentre {
+    return _localizedValues[locale.languageCode]['helpCentre'];
   }
 
-  String get availableBalance {
-    return _localizedValues[locale.languageCode]['availableBalance'];
+  String get language {
+    return _localizedValues[locale.languageCode]['language'];
   }
 
-  String get bankInfo {
-    return _localizedValues[locale.languageCode]['bankInfo'];
-  }
-
-  String get accountHolderName {
-    return _localizedValues[locale.languageCode]['accountHolderName'];
-  }
-
-  String get bankName {
-    return _localizedValues[locale.languageCode]['bankName'];
-  }
-
-  String get branchCode {
-    return _localizedValues[locale.languageCode]['branchCode'];
-  }
-
-  String get accountNumber {
-    return _localizedValues[locale.languageCode]['accountNumber'];
-  }
-
-  String get enterAmountToTransfer {
-    return _localizedValues[locale.languageCode]['enterAmountToTransfer'];
+  String get logout {
+    return _localizedValues[locale.languageCode]['logout'];
   }
 
   String get contactUs {
@@ -221,120 +200,93 @@ class AppLocalizations {
     return _localizedValues[locale.languageCode]['submit'];
   }
 
-  String get hey {
-    return _localizedValues[locale.languageCode]['hey'];
-  }
-
-  String get wallet {
-    return _localizedValues[locale.languageCode]['wallet'];
-  }
-
-  String get insight {
-    return _localizedValues[locale.languageCode]['insight'];
-  }
-
-  String get language {
-    return _localizedValues[locale.languageCode]['language'];
-  }
-
-  String get logout {
-    return _localizedValues[locale.languageCode]['logout'];
-  }
-
-  String get helpCenter {
-    return _localizedValues[locale.languageCode]['helpCenter'];
-  }
-
-  String get home {
-    return _localizedValues[locale.languageCode]['home'];
-  }
-
-  String get myAccount {
-    return _localizedValues[locale.languageCode]['myAccount'];
-  }
-
-  String get featureImage {
-    return _localizedValues[locale.languageCode]['featureImage'];
-  }
-
-  String get uploadPhoto {
-    return _localizedValues[locale.languageCode]['uploadPhoto'];
-  }
-
-  String get profileInfo {
-    return _localizedValues[locale.languageCode]['profileInfo'];
-  }
-
-  String get gender {
-    return _localizedValues[locale.languageCode]['gender'];
-  }
-
-  String get documentation {
-    return _localizedValues[locale.languageCode]['documentation'];
-  }
-
-  String get governmentID {
-    return _localizedValues[locale.languageCode]['governmentID'];
-  }
-
-  String get upload {
-    return _localizedValues[locale.languageCode]['upload'];
-  }
-
-  String get notUploadedYet {
-    return _localizedValues[locale.languageCode]['notUploadedYet'];
-  }
-
-  String get updateInfo {
-    return _localizedValues[locale.languageCode]['updateInfo'];
-  }
-
-  String get male {
-    return _localizedValues[locale.languageCode]['male'];
-  }
-
-  String get youReOffline {
-    return _localizedValues[locale.languageCode]['youReOffline'];
-  }
-
-  String get youReOnline {
-    return _localizedValues[locale.languageCode]['youReOnline'];
-  }
-
-  String get goOnline {
-    return _localizedValues[locale.languageCode]['goOnline'];
-  }
-
-  String get goOffline {
-    return _localizedValues[locale.languageCode]['goOffline'];
+  String get topSellingItems {
+    return _localizedValues[locale.languageCode]['topSellingItems'];
   }
 
   String get orders {
     return _localizedValues[locale.languageCode]['orders'];
   }
 
-  String get ride {
-    return _localizedValues[locale.languageCode]['ride'];
+  String get revenue {
+    return _localizedValues[locale.languageCode]['revenue'];
   }
 
-  String get earnings {
-    return _localizedValues[locale.languageCode]['earnings'];
+  String get apparel {
+    return _localizedValues[locale.languageCode]['apparel'];
   }
 
-  String get today {
-    return _localizedValues[locale.languageCode]['today'];
+  String get vegetables {
+    return _localizedValues[locale.languageCode]['vegetables'];
   }
 
-  String get viewAllTrans {
-    return _localizedValues[locale.languageCode]['viewAllTrans'];
+  String get sold {
+    return _localizedValues[locale.languageCode]['sold'];
+  }
+
+  String get sendToBank {
+    return _localizedValues[locale.languageCode]['sendToBank'];
+  }
+
+  String get recentTransactions {
+    return _localizedValues[locale.languageCode]['recentTransactions'];
+  }
+
+  String get sendTo {
+    return _localizedValues[locale.languageCode]['sendTo'];
+  }
+
+  String get bank {
+    return _localizedValues[locale.languageCode]['bank'];
+  }
+
+  String get balance {
+    return _localizedValues[locale.languageCode]['balance'];
+  }
+
+  String get cauliFlower {
+    return _localizedValues[locale.languageCode]['cauliFlower'];
+  }
+
+  String get changeCoverImage {
+    return _localizedValues[locale.languageCode]['changeCoverImage'];
+  }
+
+  String get setProfileInfo {
+    return _localizedValues[locale.languageCode]['setProfileInfo'];
+  }
+
+  String get sellerName {
+    return _localizedValues[locale.languageCode]['sellerName'];
+  }
+
+  String get sellerName1 {
+    return _localizedValues[locale.languageCode]['sellerName1'];
+  }
+
+
+  String get setSellerAddress {
+    return _localizedValues[locale.languageCode]['setSellerAddress'];
+  }
+
+  String get selectOnMap {
+    return _localizedValues[locale.languageCode]['selectOnMap'];
+  }
+
+  String get update {
+    return _localizedValues[locale.languageCode]['update'];
+  }
+
+  String get addItem {
+    return _localizedValues[locale.languageCode]['addItem'];
+  }
+
+  String get updateItem {
+    return _localizedValues[locale.languageCode]['updateItem'];
   }
 
   String get englishh {
     return _localizedValues[locale.languageCode]['englishh'];
-  }
-
-  String get frenchh {
-    return _localizedValues[locale.languageCode]['frenchh'];
   }
 
   String get spanishh {
@@ -345,12 +297,16 @@ class AppLocalizations {
     return _localizedValues[locale.languageCode]['portuguesee'];
   }
 
-  String get indonesiann {
-    return _localizedValues[locale.languageCode]['indonesiann'];
+  String get frenchh {
+    return _localizedValues[locale.languageCode]['frenchh'];
   }
 
   String get arabicc {
     return _localizedValues[locale.languageCode]['arabicc'];
+  }
+
+  String get indonesiann {
+    return _localizedValues[locale.languageCode]['indonesiann'];
   }
 
   String get languages {
@@ -361,71 +317,150 @@ class AppLocalizations {
     return _localizedValues[locale.languageCode]['selectPreferredLanguage'];
   }
 
-  String get acceptDelivery {
-    return _localizedValues[locale.languageCode]['acceptDelivery'];
+  String get save {
+    return _localizedValues[locale.languageCode]['save'];
   }
 
-  String get markAsDelivered {
-    return _localizedValues[locale.languageCode]['markAsDelivered'];
+  String get addAddress {
+    return _localizedValues[locale.languageCode]['addAddress'];
   }
 
-  String get close {
-    return _localizedValues[locale.languageCode]['close'];
+  String get saveAddress {
+    return _localizedValues[locale.languageCode]['saveAddress'];
   }
 
-  String get cashOnDelivery {
-    return _localizedValues[locale.languageCode]['cashOnDelivery'];
+  String get editItem {
+    return _localizedValues[locale.languageCode]['editItem'];
   }
 
-  String get backToHome {
-    return _localizedValues[locale.languageCode]['backToHome'];
+  String get itemInfo {
+    return _localizedValues[locale.languageCode]['itemInfo'];
   }
 
-  String get viewEarnings {
-    return _localizedValues[locale.languageCode]['viewEarnings'];
+  String get productTitle {
+    return _localizedValues[locale.languageCode]['productTitle'];
   }
 
-  String get yourEarning {
-    return _localizedValues[locale.languageCode]['yourEarning'];
+  String get itemCategory {
+    return _localizedValues[locale.languageCode]['itemCategory'];
   }
 
-  String get viewOrderInfo {
-    return _localizedValues[locale.languageCode]['viewOrderInfo'];
+  String get itemSubCategory {
+    return _localizedValues[locale.languageCode]['itemSubCategory'];
   }
 
-  String get youDrove {
-    return _localizedValues[locale.languageCode]['youDrove'];
+  String get freshvegetables {
+    return _localizedValues[locale.languageCode]['freshvegetables'];
   }
 
-  String get thankYouForDelivering {
-    return _localizedValues[locale.languageCode]['thankYouForDelivering'];
+  String get description {
+    return _localizedValues[locale.languageCode]['description'];
   }
 
-  String get deliveredSuccessfully {
-    return _localizedValues[locale.languageCode]['deliveredSuccessfully'];
+  String get briefYourProduct {
+    return _localizedValues[locale.languageCode]['briefYourProduct'];
   }
 
-  String get vegetables {
-    return _localizedValues[locale.languageCode]['vegetables'];
-  }
-  String get healthcare {
-    return _localizedValues[locale.languageCode]['healthcare'];
+  String get pricingStock {
+    return _localizedValues[locale.languageCode]['pricingStock'];
   }
 
-  String get recent {
-    return _localizedValues[locale.languageCode]['recent'];
+  String get productTag1 {
+    return _localizedValues[locale.languageCode]['productTag1'];
   }
 
-  String get online {
-    return _localizedValues[locale.languageCode]['online'];
+  String get productTag2 {
+    return _localizedValues[locale.languageCode]['productTag2'];
   }
 
-  String get incorectPassword{
-    return _localizedValues[locale.languageCode]['incorectPassword'];
+  String get ean1 {
+    return _localizedValues[locale.languageCode]['ean1'];
   }
 
-  String get incorectEmail{
-    return _localizedValues[locale.languageCode]['incorectEmail'];
+  String get ean2 {
+    return _localizedValues[locale.languageCode]['ean2'];
+  }
+
+
+  String get sellProductPrice {
+    return _localizedValues[locale.languageCode]['sellProductPrice'];
+  }
+
+  String get sellProductMrp {
+    return _localizedValues[locale.languageCode]['sellProductMrp'];
+  }
+
+
+  String get stockAvailability {
+    return _localizedValues[locale.languageCode]['stockAvailability'];
+  }
+
+  String get inStock {
+    return _localizedValues[locale.languageCode]['inStock'];
+  }
+
+  String get itemID {
+    return _localizedValues[locale.languageCode]['itemID'];
+  }
+
+  String get shippingAddress {
+    return _localizedValues[locale.languageCode]['shippingAddress'];
+  }
+
+  String get readyDispatch {
+    return _localizedValues[locale.languageCode]['readyDispatch'];
+  }
+
+  String get assignboy {
+    return _localizedValues[locale.languageCode]['assignboy'];
+  }
+
+  String get cancelOrdr {
+    return _localizedValues[locale.languageCode]['cancelOrdr'];
+  }
+
+  String get avgRatings {
+    return _localizedValues[locale.languageCode]['avgRatings'];
+  }
+
+  String get ratings {
+    return _localizedValues[locale.languageCode]['ratings'];
+  }
+
+  String get recentReviews {
+    return _localizedValues[locale.languageCode]['recentReviews'];
+  }
+
+  String get balanceAvailable {
+    return _localizedValues[locale.languageCode]['balanceAvailable'];
+  }
+
+  String get provideBankDetails {
+    return _localizedValues[locale.languageCode]['provideBankDetails'];
+  }
+
+  String get bankName {
+    return _localizedValues[locale.languageCode]['bankName'];
+  }
+
+  String get branchCode {
+    return _localizedValues[locale.languageCode]['branchCode'];
+  }
+
+  String get accountNumber {
+    return _localizedValues[locale.languageCode]['accountNumber'];
+  }
+
+  String get enterAmountToTransfer {
+    return _localizedValues[locale.languageCode]['enterAmountToTransfer'];
+  }
+
+  String get sentOn {
+    return _localizedValues[locale.languageCode]['sentOn'];
+  }
+
+  String get sentSuccessfully {
+    return _localizedValues[locale.languageCode]['sentSuccessfully'];
   }
 
   String get password1 {
@@ -436,12 +471,100 @@ class AppLocalizations {
     return _localizedValues[locale.languageCode]['password2'];
   }
 
+  String get storename1 {
+    return _localizedValues[locale.languageCode]['storename1'];
+  }
+
+  String get storename2 {
+    return _localizedValues[locale.languageCode]['storename2'];
+  }
+
+  String get storenumber1 {
+    return _localizedValues[locale.languageCode]['storenumber1'];
+  }
+
+  String get storenumber2 {
+    return _localizedValues[locale.languageCode]['storenumber2'];
+  }
+
+  String get ownerName1 {
+    return _localizedValues[locale.languageCode]['ownerName1'];
+  }
+
+  String get ownerName2 {
+    return _localizedValues[locale.languageCode]['ownerName2'];
+  }
+
+  String get adminshare1 {
+    return _localizedValues[locale.languageCode]['adminshare1'];
+  }
+
+  String get adminshare2 {
+    return _localizedValues[locale.languageCode]['adminshare2'];
+  }
+
+  String get deliveryrange1 {
+    return _localizedValues[locale.languageCode]['deliveryrange1'];
+  }
+
+  String get deliveryrange2 {
+    return _localizedValues[locale.languageCode]['deliveryrange2'];
+  }
+
+  String get storeaddress1 {
+    return _localizedValues[locale.languageCode]['storeaddress1'];
+  }
+
+  String get storeaddress2 {
+    return _localizedValues[locale.languageCode]['storeaddress2'];
+  }
+
+  String get storeimage {
+    return _localizedValues[locale.languageCode]['storeimage'];
+  }
+
+  String get selectycity1 {
+    return _localizedValues[locale.languageCode]['selectycity1'];
+  }
+
+  String get selectycity2 {
+    return _localizedValues[locale.languageCode]['selectycity2'];
+  }
+
+  String get uploadpictext{
+    return _localizedValues[locale.languageCode]['uploadpictext'];
+  }
+
+  String get incorectPassword{
+    return _localizedValues[locale.languageCode]['incorectPassword'];
+  }
+
+  String get incorectEmail{
+    return _localizedValues[locale.languageCode]['incorectEmail'];
+  }
+
+  String get incorectUserName{
+    return _localizedValues[locale.languageCode]['incorectUserName'];
+  }
+
   String get incorectMobileNumber{
     return _localizedValues[locale.languageCode]['incorectMobileNumber'];
   }
 
+  String get itempagenomore{
+    return _localizedValues[locale.languageCode]['itempagenomore'];
+  }
+
   String get aboutUs{
     return _localizedValues[locale.languageCode]['aboutUs'];
+  }
+
+  String get deliveryperson{
+    return _localizedValues[locale.languageCode]['deliveryperson'];
+  }
+
+  String get deliveryDate{
+    return _localizedValues[locale.languageCode]['deliveryDate'];
   }
 
   String get callBackReq1{
@@ -452,32 +575,80 @@ class AppLocalizations {
     return _localizedValues[locale.languageCode]['callBackReq2'];
   }
 
-  String get tnc{
-    return _localizedValues[locale.languageCode]['tnc'];
-  }
-
-  String get deliveryDate{
-    return _localizedValues[locale.languageCode]['deliveryDate'];
-  }
-
   String get nohistoryfound{
     return _localizedValues[locale.languageCode]['nohistoryfound'];
   }
 
-  String get todayorder{
-    return _localizedValues[locale.languageCode]['todayorder'];
+  String get or{
+    return _localizedValues[locale.languageCode]['or'];
   }
 
-  String get nextdayorder{
-    return _localizedValues[locale.languageCode]['nextdayorder'];
+  String get tnc {
+    return _localizedValues[locale.languageCode]['tnc'];
   }
 
-  String get noorder{
-    return _localizedValues[locale.languageCode]['noorder'];
+  String get unit2{
+    return _localizedValues[locale.languageCode]['unit2'];
   }
 
-  String get order{
-    return _localizedValues[locale.languageCode]['order'];
+  String get unit1{
+    return _localizedValues[locale.languageCode]['unit1'];
+  }
+
+  String get qnty2 {
+    return _localizedValues[locale.languageCode]['qnty2'];
+  }
+
+  String get qnty1{
+    return _localizedValues[locale.languageCode]['qnty1'];
+  }
+
+  String get qntyunit {
+    return _localizedValues[locale.languageCode]['qntyunit'];
+  }
+
+  String get addVarient {
+    return _localizedValues[locale.languageCode]['addVarient'];
+  }
+
+  String get printinvoice {
+    return _localizedValues[locale.languageCode]['printinvoice'];
+  }
+
+  String get pos {
+    return _localizedValues[locale.languageCode]['pos'];
+  }
+
+  String get close {
+    return _localizedValues[locale.languageCode]['close'];
+  }
+
+  String get storepheading{
+    return _localizedValues[locale.languageCode]['storepheading'];
+  }
+
+  String get adminpheading{
+    return _localizedValues[locale.languageCode]['adminpheading'];
+  }
+
+  String get todayOrd{
+    return _localizedValues[locale.languageCode]['todayOrd'];
+  }
+
+  String get nextdayOrd{
+    return _localizedValues[locale.languageCode]['nextdayOrd'];
+  }
+
+  String get noorderfnd{
+    return _localizedValues[locale.languageCode]['noorderfnd'];
+  }
+
+  String get connect{
+    return _localizedValues[locale.languageCode]['connect'];
+  }
+
+  String get headingAlert1{
+    return _localizedValues[locale.languageCode]['headingAlert1'];
   }
 
   String get invoice1h{
@@ -496,226 +667,268 @@ class AppLocalizations {
     return _localizedValues[locale.languageCode]['invoice2h'];
   }
 
-  String get invoice5h {
+  String get invoice5h{
     return _localizedValues[locale.languageCode]['invoice5h'];
   }
 
-  String get clearview {
-    return _localizedValues[locale.languageCode]['clearview'];
+  String get invoice6h{
+    return _localizedValues[locale.languageCode]['invoice6h'];
   }
 
-  String get paymentmode {
-    return _localizedValues[locale.languageCode]['paymentmode'];
+  String get invoice7h{
+    return _localizedValues[locale.languageCode]['invoice7h'];
   }
 
-  //TODO: Added new Content in Localization
-
-  String get youAreOffline {
-    return _localizedValues[locale.languageCode]['YouAreOffline'];
+  String get cancel{
+    return _localizedValues[locale.languageCode]['cancel'];
   }
 
-  String get goOnlineStartAcceptingJobs {
-    return _localizedValues[locale.languageCode]['GoOnlineStartAcceptingJobs'];
+  String get photolib{
+    return _localizedValues[locale.languageCode]['photolib'];
   }
 
-  String get fullNameIsRequired {
-    return _localizedValues[locale.languageCode]['FullNameIsRequired'];
+  String get camera{
+    return _localizedValues[locale.languageCode]['camera'];
   }
 
-  String get phoneNumberIsRequired {
-    return _localizedValues[locale.languageCode]['PhoneNumberIsRequired'];
+  String get pimage1{
+    return _localizedValues[locale.languageCode]['pimage1'];
   }
 
-  String get passwordIsRequired {
-    return _localizedValues[locale.languageCode]['PasswordIsRequired'];
+  String get order1{
+    return _localizedValues[locale.languageCode]['order1'];
   }
 
-  String get minimumFourCharacterRequiredInPassword {
-    return _localizedValues[locale.languageCode]['MinimumFourCharacterRequiredInPassword'];
+  String get qnt{
+    return _localizedValues[locale.languageCode]['qnt'];
   }
 
-  String get phoneNumberIsNotEdited {
-    return _localizedValues[locale.languageCode]['PhoneNumberIsNotEdited'];
+  String get coupondatevalidate{
+    return _localizedValues[locale.languageCode]['coupondatevalidate'];
   }
 
-  String get changePassword {
-    return _localizedValues[locale.languageCode]['ChangePassword'];
+  String get coupondiserror{
+    return _localizedValues[locale.languageCode]['coupondiserror'];
+  }
+  String get cartVerror{
+    return _localizedValues[locale.languageCode]['cartVerror'];
+  }
+  String get couponnameerror{
+    return _localizedValues[locale.languageCode]['couponnameerror'];
+  }
+  String get couponcodeerror{
+    return _localizedValues[locale.languageCode]['couponcodeerror'];
+  }
+  String get coupondescerror{
+    return _localizedValues[locale.languageCode]['coupondescerror'];
+  }
+  String get couponresterror{
+    return _localizedValues[locale.languageCode]['couponresterror'];
+  }
+  String get couponcodetitle1{
+    return _localizedValues[locale.languageCode]['couponcodetitle1'];
+  }
+  String get couponcodetitle2{
+    return _localizedValues[locale.languageCode]['couponcodetitle2'];
   }
 
-  String get oldPassword {
-    return _localizedValues[locale.languageCode]['OldPassword'];
+  String get couponcarttitle1{
+    return _localizedValues[locale.languageCode]['couponcarttitle1'];
+  }
+  String get couponcarttitle2{
+    return _localizedValues[locale.languageCode]['couponcarttitle2'];
+  }
+  String get couponnametitle1{
+    return _localizedValues[locale.languageCode]['couponnametitle1'];
+  }
+  String get couponnametitle2{
+    return _localizedValues[locale.languageCode]['couponnametitle2'];
+  }
+  String get coupondesc1{
+    return _localizedValues[locale.languageCode]['coupondesc1'];
+  }
+  String get coupondesc2{
+    return _localizedValues[locale.languageCode]['coupondesc2'];
+  }
+  String get coupondis1{
+    return _localizedValues[locale.languageCode]['coupondis1'];
+  }
+  String get coupondis2{
+    return _localizedValues[locale.languageCode]['coupondis2'];
   }
 
-  String get newPassword {
-    return _localizedValues[locale.languageCode]['NewPassword'];
+  String get couponresttitle1{
+    return _localizedValues[locale.languageCode]['couponresttitle1'];
+  }
+  String get couponresttitle2{
+    return _localizedValues[locale.languageCode]['couponresttitle2'];
+  }
+  String get enddate{
+    return _localizedValues[locale.languageCode]['enddate'];
+  }
+  String get startdate{
+    return _localizedValues[locale.languageCode]['startdate'];
+  }
+  String get percentage{
+    return _localizedValues[locale.languageCode]['percentage'];
+  }
+  String get selectcoupontype{
+    return _localizedValues[locale.languageCode]['selectcoupontype'];
+  }
+  String get addcoupon{
+    return _localizedValues[locale.languageCode]['addcoupon'];
   }
 
-  String get confirmPassword {
-    return _localizedValues[locale.languageCode]['ConfirmPassword'];
+  String get cartvalue{
+    return _localizedValues[locale.languageCode]['cartvalue'];
+  }
+  String get duration{
+    return _localizedValues[locale.languageCode]['duration'];
+  }
+  String get coupontype{
+    return _localizedValues[locale.languageCode]['coupontype'];
+  }
+  String get restriction{
+    return _localizedValues[locale.languageCode]['restriction'];
+  }
+  String get delete{
+    return _localizedValues[locale.languageCode]['delete'];
+  }
+  String get coupon{
+    return _localizedValues[locale.languageCode]['coupon'];
+  }
+  String get sharecouponcode{
+    return _localizedValues[locale.languageCode]['sharecouponcode'];
+  }
+  String get editcouponcode{
+    return _localizedValues[locale.languageCode]['editcouponcode'];
+  }
+  String get notyetcoupon{
+    return _localizedValues[locale.languageCode]['notyetcoupon'];
+  }
+  String get updatecoupon{
+    return _localizedValues[locale.languageCode]['updatecoupon'];
+  }
+  String get bluetoothOnMessage{
+    return _localizedValues[locale.languageCode]['bluetoothOnMessage'];
   }
 
-  String get save {
-    return _localizedValues[locale.languageCode]['Save'];
+  String get notsupportblue{
+    return _localizedValues[locale.languageCode]['notsupportblue'];
   }
 
-  String get oldPasswordIsMisMatched {
-    return _localizedValues[locale.languageCode]['OldPasswordIsMis-Matched'];
+  String get searchprinter{
+    return _localizedValues[locale.languageCode]['searchprinter'];
   }
 
-  String get oldPasswordIsRequired {
-    return _localizedValues[locale.languageCode]['OldPasswordIsRequired'];
+  String get user{
+    return _localizedValues[locale.languageCode]['user'];
+  }String get addVariant{
+    return _localizedValues[locale.languageCode]['addVariant'];
+  }String get product{
+    return _localizedValues[locale.languageCode]['product'];
+  }String get updateProduct{
+    return _localizedValues[locale.languageCode]['updateProduct'];
+  }String get deleteProduct{
+    return _localizedValues[locale.languageCode]['deleteProduct'];
+  }String get createCouponCode{
+    return _localizedValues[locale.languageCode]['createCouponCode'];
+  }String get confirmation{
+    return _localizedValues[locale.languageCode]['confirmation'];
+  }String get confirmationSure{
+    return _localizedValues[locale.languageCode]['confirmationSure'];
+  }String get no{
+    return _localizedValues[locale.languageCode]['no'];
+  }String get yes{
+    return _localizedValues[locale.languageCode]['yes'];
+  }String get enterValidRestriction{
+    return _localizedValues[locale.languageCode]['enterValidRestriction'];
+  }String get enterValidAmount{
+    return _localizedValues[locale.languageCode]['enterValidAmount'];
+  }String get selectValidDate{
+    return _localizedValues[locale.languageCode]['selectValidDate'];
+  }String get invoiceNo{
+    return _localizedValues[locale.languageCode]['invoiceNo'];
+  }String get selectValidImage{
+    return _localizedValues[locale.languageCode]['selectValidImage'];
+  }String get enterValidMobile{
+    return _localizedValues[locale.languageCode]['enterValidMobile'];
+  }String get enterSellerName{
+    return _localizedValues[locale.languageCode]['enterSellerName'];
+  }String get enterStoreName{
+    return _localizedValues[locale.languageCode]['enterStoreName'];
+  }String get enterMessage{
+    return _localizedValues[locale.languageCode]['enterMessage'];
+  }String get singIn{
+    return _localizedValues[locale.languageCode]['singIn'];
+  }String get enter5Characters{
+    return _localizedValues[locale.languageCode]['enter5Characters'];
+  }String get enterPass{
+    return _localizedValues[locale.languageCode]['enterPass'];
+  }String get enterValidEmail{
+    return _localizedValues[locale.languageCode]['enterValidEmail'];
+  }String get enterEmail{
+    return _localizedValues[locale.languageCode]['enterEmail'];
+  }String get scanBarcode{
+    return _localizedValues[locale.languageCode]['scanBarcode'];
+  }String get enterTitle{
+    return _localizedValues[locale.languageCode]['enterTitle'];
+  }String get enterDescription{
+    return _localizedValues[locale.languageCode]['enterDescription'];
+  }String get enterPrice{
+    return _localizedValues[locale.languageCode]['enterPrice'];
+  }String get enterMrp{
+    return _localizedValues[locale.languageCode]['enterMrp'];
+  }String get enterProduct{
+    return _localizedValues[locale.languageCode]['enterProduct'];
+  }String get addImage{
+    return _localizedValues[locale.languageCode]['addImage'];
+  }String get addOneTag{
+    return _localizedValues[locale.languageCode]['addOneTag'];
+  }String get scanProduct{
+    return _localizedValues[locale.languageCode]['scanProduct'];
+  }String get selectCategory{
+    return _localizedValues[locale.languageCode]['selectCategory'];
+  }String get enterUnit{
+    return _localizedValues[locale.languageCode]['enterUnit'];
+  }String get enterValidUnit{
+    return _localizedValues[locale.languageCode]['enterValidUnit'];
+  }String get enterQuantity{
+    return _localizedValues[locale.languageCode]['enterQuantity'];
+  }String get enterValidQuantity{
+    return _localizedValues[locale.languageCode]['enterValidQuantity'];
+  }String get priceLessOrEqual{
+    return _localizedValues[locale.languageCode]['priceLessOrEqual'];
+  }String get enterProductMrp{
+    return _localizedValues[locale.languageCode]['enterProductMrp'];
+  }String get enterValidProductMrp{
+    return _localizedValues[locale.languageCode]['enterValidProductMrp'];
+  }String get enterProductPrice{
+    return _localizedValues[locale.languageCode]['enterProductPrice'];
+  }String get enterValidProductPrice{
+    return _localizedValues[locale.languageCode]['enterValidProductPrice'];
+  }String get enterProductDescription{
+    return _localizedValues[locale.languageCode]['enterProductDescription'];
+  }String get confirmationSureVariant{
+    return _localizedValues[locale.languageCode]['confirmationSureVariant'];
+  }String get confirmationSureItem{
+    return _localizedValues[locale.languageCode]['confirmationSureItem'];
+  }String get enterValidTag{
+    return _localizedValues[locale.languageCode]['enterValidTag'];
+  }String get enterProductTitle{
+    return _localizedValues[locale.languageCode]['enterProductTitle'];
   }
 
-  String get newPasswordIsRequired {
-    return _localizedValues[locale.languageCode]['NewPasswordIsRequired'];
-  }
 
-  String get confirmPasswordIsRequired {
-    return _localizedValues[locale.languageCode]['ConfirmPasswordIsRequired'];
-  }
-
-  String get oldAndNewPasswordMustbeSame {
-    return _localizedValues[locale.languageCode]['OldAndNewPasswordMustbeSame'];
-  }
-
-  String get completed {
-    return _localizedValues[locale.languageCode]['Completed'];
-  }
-
-  String get advanceValue {
-    return _localizedValues[locale.languageCode]['AdvanceValue'];
-  }
-
-  String get enterAccountHolderName {
-    return _localizedValues[locale.languageCode]['EnterAccountHolderName'];
-  }
-
-  String get enterYourbankName {
-    return _localizedValues[locale.languageCode]['EnterYourbankName'];
-  }
-
-  String get enterYourBankBranchCode {
-    return _localizedValues[locale.languageCode]['EnterYourBankBranchCode'];
-  }
-
-  String get enterYourBankAccounNumber {
-    return _localizedValues[locale.languageCode]['EnterYourBankAccounNumber'];
-  }
-
-  String get enterYourBankUPINumber {
-    return _localizedValues[locale.languageCode]['EnterYourBankUPINumber'];
-  }
-
-  String get accountHolderNameIsRequired {
-    return _localizedValues[locale.languageCode]['AccountHolderNameIsRequired'];
-  }
-
-  String get bankNameIsRequired {
-    return _localizedValues[locale.languageCode]['BankNameIsRequired'];
-  }
-
-  String get branchCodeIsRequired {
-    return _localizedValues[locale.languageCode]['BranchCodeIsRequired'];
-  }
-
-  String get accountNumberIsRequired {
-    return _localizedValues[locale.languageCode]['AccountNumberIsRequired'];
-  }
-
-  String get yourSignaturePlease {
-    return _localizedValues[locale.languageCode]['YourSignaturePlease'];
-  }
-
-  String get phoneNumberAndPaswordisRequired {
-    return _localizedValues[locale.languageCode]['PhoneNumberAndPaswordisRequired'];
-  }
-
-  String get youCanNotYourChangeMobileNumber {
-    return _localizedValues[locale.languageCode]['YouCanNotYourChangeMobileNumber'];
-  }
-
-  String get feedbackIsRequired {
-    return _localizedValues[locale.languageCode]['FeedbackIsRequired'];
-  }
-
-  String get loggingOut {
-    return _localizedValues[locale.languageCode]['LoggingOut'];
-  }
-
-  String get areYousure {
-    return _localizedValues[locale.languageCode]['AreYousure'];
-  }
-
-  String get no {
-    return _localizedValues[locale.languageCode]['No'];
-  }
-
-  String get yes {
-    return _localizedValues[locale.languageCode]['Yes'];
-  }
-
-  String get phoneNumberMustBe10Digits {
-    return _localizedValues[locale.languageCode]['PhoneNumberMustBe10Digits'];
-  }
-
-  String get numericValueNotAllowedInFullName {
-    return _localizedValues[locale.languageCode]['NumericValueNotAllowedInFullName'];
-  }
-
-  String get numericValueNotAllowedInAccountHolderName {
-    return _localizedValues[locale.languageCode]['NumericValueNotAllowedInAccountHolderName'];
-  }
-
-  String get numericValueNotAllowedInBankName {
-    return _localizedValues[locale.languageCode]['NumericValueNotAllowedInBankName'];
-  }
-
-  String get specialCharacterNotAllowedInBankName {
-    return _localizedValues[locale.languageCode]['SpecialCharacterNotAllowedInBankName'];
-  }
-
-  String get onlyNumericValueAllowedInAccountNumber {
-    return _localizedValues[locale.languageCode]['OnlyNumericValueAllowedInAccountNumber'];
-  }
-
-  String get locationPermissionIsRequired {
-    return _localizedValues[locale.languageCode]['LocationPermissionIsRequired'];
-  }
-
-  String get englishSelected {
-    return _localizedValues[locale.languageCode]['EnglishSelected'];
-  }
-
-  String get arabicSelected {
-    return _localizedValues[locale.languageCode]['ArabicSelected'];
-  }
-
-  String get portugueseSelected {
-    return _localizedValues[locale.languageCode]['PortugueseSelected'];
-  }
-
-  String get frenchSelected {
-    return _localizedValues[locale.languageCode]['FrenchSelected'];
-  }
-
-  String get spanishSelected {
-    return _localizedValues[locale.languageCode]['SpanishSelected'];
-  }
-
-  String get indonesianSelected {
-    return _localizedValues[locale.languageCode]['IndonesianSelected'];
-  }
-
-  String get pleaseTryAgain {
-    return _localizedValues[locale.languageCode]['pleasetryagain'];
-  }
+// var locale = AppLocalizations.of(context);
 }
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   const AppLocalizationsDelegate();
 
   @override
-  bool isSupported(Locale locale) => ['en', 'ar', 'pt', 'fr', 'id', 'es'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      ['en', 'ar', 'pt', 'fr', 'id', 'es'].contains(locale.languageCode);
 
   @override
   Future<AppLocalizations> load(Locale locale) {

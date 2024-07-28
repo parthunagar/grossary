@@ -1,18 +1,19 @@
-import 'package:driver/Theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:driver/Locale/locales.dart';
+import 'package:vendor/Locale/locales.dart';
+import 'package:vendor/Theme/colors.dart';
 
 class CustomButton extends StatefulWidget {
-  final String label;
-  final Widget onPress,prefixIcon;
-  final double width,iconGap,height,border;
-  final Function onTap;
-  final Color color,textColor;
+  final String label,imageAssets;
+  final double width,iconGap,height;
+  final Widget prefixIcon,onPress;
+  final Color color;
+  final Function action,onTap;
 
   CustomButton({
-    this.label, this.onPress, this.width,
-    this.prefixIcon,this.iconGap, this.height,
-    this.onTap, this.color, this.border, this.textColor});
+    this.label, this.onPress, this.imageAssets, this.width,
+    this.prefixIcon, this.iconGap, this.height,
+    this.onTap, this.color, this.action,
+  });
 
   @override
   _CustomButtonState createState() => _CustomButtonState();
@@ -23,95 +24,39 @@ class _CustomButtonState extends State<CustomButton> {
   Widget build(BuildContext context) {
     var locale = AppLocalizations.of(context);
     return GestureDetector(
-      onTap: widget.onTap,
+      onTap: widget.onTap ??
+        () {
+         Navigator.push(context,
+          MaterialPageRoute(builder: (context) => widget.onPress))
+          .then((value) {
+        widget.action();
+      });
+    },
       child: Container(
         width: widget.width,
-        height: widget.height ?? 56,
+        height: widget.height,
+        padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: widget.color ?? Theme.of(context).primaryColor,
-          borderRadius: BorderRadius.circular(widget.border ?? 0),
-        ),
-        padding: EdgeInsets.symmetric(horizontal: 20),
+          borderRadius: BorderRadius.all(Radius.circular(45)),),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            widget.prefixIcon ?? SizedBox.shrink(),
+            widget.prefixIcon != null ? widget.prefixIcon : SizedBox.shrink(),
             SizedBox(width: widget.iconGap),
-            Center(
-              child: Text(
-                widget.label ?? locale.continueText.toUpperCase(),
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 16,
-                  color: widget.textColor ?? Theme.of(context).scaffoldBackgroundColor,
-                  letterSpacing: 1,
-                  fontWeight: FontWeight.w500),
-              ),
+            Text(
+              widget.label ?? locale.continueText,
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 13, color: Theme.of(context).scaffoldBackgroundColor, letterSpacing: 1, fontWeight: FontWeight.w700),
             ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class CustomRedButton extends StatefulWidget {
-  final String label;
-  final Widget onPress,prefixIcon;
-  final double width,iconGap,height,border,fontSize;
-  final Function onTap;
-  final Color color,textColor;
-  EdgeInsetsGeometry margin,padding;
-  final fontFamily;
-
-  CustomRedButton({
-    this.label, this.onPress, this.width, this.prefixIcon, this.iconGap,
-    this.height, this.onTap, this.color, this.border, this.margin,
-    this.textColor, this.padding,this.fontFamily,this.fontSize
-  });
-
-  @override
-  _CustomRedButtonState createState() => _CustomRedButtonState();
-}
-
-class _CustomRedButtonState extends State<CustomRedButton> {
-  @override
-  Widget build(BuildContext context) {
-    var locale = AppLocalizations.of(context);
-    return GestureDetector(
-      onTap: widget.onTap,
-      child: Container(
-        // alignment: Alignment.center,
-        // width: widget.width,
-        height: widget.height ?? 56,
-        margin: widget.margin ?? EdgeInsets.all(0),
-        decoration: BoxDecoration(
-          color: widget.color ?? kRoundButton,
-          borderRadius: BorderRadius.circular(widget.border ?? 50),
-        ),
-        padding: widget.padding ?? EdgeInsets.symmetric(horizontal: 20),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Flexible(
-              child: Center(
-                child: Text(
-                  widget.label ?? locale.continueText,
-                  textAlign: TextAlign.center,
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    fontSize:  widget.fontSize ?? 16,
-                    fontFamily: widget.fontFamily,
-                    color: widget.textColor ?? Theme.of(context).scaffoldBackgroundColor,
-                    // letterSpacing: 1,
-                    fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
-            SizedBox(width: 10),
-            widget.prefixIcon ?? SizedBox.shrink(),
-            // SizedBox(width: widget.iconGap),
-            // Image.asset("assets/images/bgupdate_info.png")
+            SizedBox(width: widget.iconGap),
+            Container(
+              height: 26,
+              width: 26,
+              padding: EdgeInsets.all(6),
+              decoration: BoxDecoration(color: kRoundButtonInButton, borderRadius: BorderRadius.all(Radius.circular(45))),
+              child: Image(image: AssetImage(widget.imageAssets ?? 'assets/icon_feather_save.png')),
+            )
           ],
         ),
       ),

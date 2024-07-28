@@ -1,4 +1,4 @@
-name: driver
+name: vendor
 description: A new Flutter application.
 
 # The following line prevents the package from being accidentally published to
@@ -27,6 +27,7 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.0
+  intl: ^0.16.1
   percent_indicator: ^2.1.5
   flutter_phoenix: ^0.1.0
   flutter_bloc: ^6.0.1
@@ -39,34 +40,43 @@ dependencies:
   toast: ^0.1.5
   http: ^0.12.2
   image_picker: ^0.6.7+11
+  file_picker: ^2.1.7
   shimmer_animation: ^0.1.1
   flutter_html: ^1.1.1
   slide_popup_dialog: ^0.0.2
   whatsapp_unilink: ^1.0.0+1
   url_launcher: ^5.7.10
   share: ^0.6.5+4
+  cached_network_image: ^2.5.0
   infinite_scroll_pagination: ^2.3.0
-  signature: ^3.2.0
-  google_maps_flutter: ^1.0.3
-  geolocator: ^6.0.0+4
-  geocoder: ^0.2.1
-  flutter_polyline_points: ^0.2.4
-  geocoding: ^1.0.5
-  syncfusion_flutter_maps: ^18.4.49-beta
-  flutter_map: ^0.11.0
-  latlng: ^0.0.2
-  flutter_osm_plugin: ^0.6.7+3
+  flutter_barcode_scanner: ^1.0.2
+#  esc_pos_printer: ^3.1.3
+  esc_pos_bluetooth: ^0.2.8
+#  flutter_bluetooth_basic: ^0.1.5
+  esc_pos_utils: any
+  image: ^2.1.4
+  focused_menu: ^1.0.2
+  firebase_dynamic_links: ^0.6.3
+  date_picker_timeline: ^1.2.1
+  package_info: ^0.4.3+4
+#  bluetoothonoff: ^0.1.0
+  bluetooth_enable: ^0.1.1
+  pdf: ^2.1.0
+  flutter_full_pdf_viewer: ^1.0.6
+  path_provider: ^1.6.27
+  printing: ^4.1.0
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.8.0
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.7.5
   change_app_package_name: ^0.1.2
 
 flutter_icons:
   android: "ic_launcher"
   ios: true
   image_path: "assets/icon.png"
+
 
 flutter:
   uses-material-design: true
@@ -75,35 +85,12 @@ flutter:
       fonts:
         - asset: fonts/ProductSans-Regular.ttf
         - asset: fonts/ProductSans-Bold.ttf
-    - family: Philosopher-Bold
-      fonts:
-        - asset: fonts/Philosopher-Bold.ttf
-    - family: Philosopher-BoldItalic
-      fonts:
-        - asset: fonts/Philosopher-BoldItalic.ttf
-    - family: Philosopher-Italic
-      fonts:
-        - asset: fonts/Philosopher-Italic.ttf
-    - family: Philosopher-Regular
-      fonts:
-        - asset: fonts/Philosopher-Regular.ttf
-    - family: BalooBold
-      fonts:
-        - asset: fonts/BalooBold.ttf
-    - family: BalooExtraBold
-      fonts:
-        - asset: fonts/BalooExtraBold.ttf
-    - family: BalooMedium
-      fonts:
-        - asset: fonts/BalooMedium.ttf
-    - family: BalooRegular
-      fonts:
-        - asset: fonts/BalooRegular.ttf
-    - family: BalooSemiBold
-      fonts:
-        - asset: fonts/BalooSemiBold.ttf
-
 
   assets:
     - assets/
-    - assets/images/
+    - assets/Logos/
+    - assets/ProductImages/
+    - assets/fonts/OpenSans-Regular.ttf
+    - assets/fonts/OpenSans-Bold.ttf
+    - assets/fonts/OpenSans-Italic.ttf
+    - assets/fonts/OpenSans-BoldItalic.ttf
