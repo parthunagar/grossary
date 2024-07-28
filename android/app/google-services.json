@@ -1,0 +1,182 @@
+{
+  "project_info": {
+    "project_number": "443109020224",
+    "project_id": "grocery---vegetables",
+    "storage_bucket": "grocery---vegetables.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443109020224:android:052b37a6f7dfa1ac2605a5",
+        "android_client_info": {
+          "package_name": "com.groceryvegetables.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443109020224-ovr1h5m1umnb8ju04eobnmdghk51qsv1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groceryvegetables.driver",
+            "certificate_hash": "9dd29dd517449500a1246b0bd127d20dfd023b03"
+          }
+        },
+        {
+          "client_id": "443109020224-su3taj7edtphtgiofcvi30i56ip2hbs3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groceryvegetables.driver",
+            "certificate_hash": "77d358b06e3648e0efec909029bd3eeb9a9ac7c9"
+          }
+        },
+        {
+          "client_id": "443109020224-akq5nl1m088esfg90ignb86um0q8144l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs69bdLuuuVwkpdK_o7T5wcaGAAb3Fwd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443109020224-akq5nl1m088esfg90ignb86um0q8144l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "443109020224-82pkbhnl55sgve08mvj7sbj6jeg1fnu6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.groceryseller.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443109020224:android:b881a12b9262bce22605a5",
+        "android_client_info": {
+          "package_name": "com.groceryvegetables.seller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443109020224-3paaod72vdigvg6vha6dfljblai6060q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groceryvegetables.seller",
+            "certificate_hash": "9dd29dd517449500a1246b0bd127d20dfd023b03"
+          }
+        },
+        {
+          "client_id": "443109020224-m5nscij2usupsofhug67uhqro7m96u4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groceryvegetables.seller",
+            "certificate_hash": "77d358b06e3648e0efec909029bd3eeb9a9ac7c9"
+          }
+        },
+        {
+          "client_id": "443109020224-akq5nl1m088esfg90ignb86um0q8144l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs69bdLuuuVwkpdK_o7T5wcaGAAb3Fwd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443109020224-akq5nl1m088esfg90ignb86um0q8144l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "443109020224-82pkbhnl55sgve08mvj7sbj6jeg1fnu6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.groceryseller.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443109020224:android:1c5ed670661b604e2605a5",
+        "android_client_info": {
+          "package_name": "com.groceryvegetables.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443109020224-4c0l5qluvvohn6icea1t2gm2c0sbebip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groceryvegetables.user",
+            "certificate_hash": "9dd29dd517449500a1246b0bd127d20dfd023b03"
+          }
+        },
+        {
+          "client_id": "443109020224-6ic7ckbbbf8qmj64lu5scuc50fa2934k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groceryvegetables.user",
+            "certificate_hash": "983705d2f50d92df507a75f832425e837f66b964"
+          }
+        },
+        {
+          "client_id": "443109020224-e94ap4ljmkgvn7097vvpfeoucm4nmnpk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groceryvegetables.user",
+            "certificate_hash": "77d358b06e3648e0efec909029bd3eeb9a9ac7c9"
+          }
+        },
+        {
+          "client_id": "443109020224-t2feljtnku7b6vu54g07kgqob1tn2vgh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.groceryvegetables.user",
+            "certificate_hash": "5d9e1a9fce063a3cfd4937278ba5d939cb31f314"
+          }
+        },
+        {
+          "client_id": "443109020224-akq5nl1m088esfg90ignb86um0q8144l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs69bdLuuuVwkpdK_o7T5wcaGAAb3Fwd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443109020224-akq5nl1m088esfg90ignb86um0q8144l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "443109020224-82pkbhnl55sgve08mvj7sbj6jeg1fnu6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.groceryseller.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
